@@ -22,10 +22,11 @@ whichkey.register(
     },
         r = {
             name = "Refactor",
+            b = {[[ <Cmd>lua require('refactoring').refactor('Extract Block')<CR>]], "Extract block"},
             e = { [[ <Esc><Cmd>lua require('refactoring').refactor('Extract Function')<CR>]], "Extract Function" },
             f = {
-            [[ <Esc><Cmd>lua require('refactoring').refactor('Extract Function to File')<CR>]],
-            "Extract Function to File",
+            [[ <Cmd>lua require('refactoring').refactor('Extract Block To File')<CR>]],
+            "Extract Block to File",
         },
             v = { [[ <Esc><Cmd>lua require('refactoring').refactor('Extract Variable')<CR>]], "Extract Variable" },
             i = { [[ <Esc><Cmd>lua require('refactoring').refactor('Inline Variable')<CR>]], "Inline Variable" },
@@ -48,14 +49,15 @@ whichkey.register(
             name = "Floaterm",
             t = {"<cmd>:FloatermToggle<CR>", "Toggle terminal"},
         },
---         l = {
---             name="LSPSaga",
---             K = {"<Cmd>Lspsaga hover_doc<cr>", "Hover"},
---             f = {"<Cmd>Lspsaga lsp_finder<cr>", "Find"},
---             i = {"<Cmd>Lspsaga signature_help<cr>", "Signature help"},
---             p = {"<Cmd>Lspsaga preview_definition<cr>", "Preview definition"},
---             r = {"<Cmd>Lspsaga rename<cr>", "Rename"},
---         }
+        l = {
+            name="LSPSaga",
+            K = {"<Cmd>Lspsaga hover_doc<cr>", "Hover"},
+            f = {"<Cmd>Lspsaga lsp_finder<cr>", "Find"},
+            i = {"<Cmd>Lspsaga signature_help<cr>", "Signature help"},
+            p = {"<Cmd>Lspsaga peek_definition<cr>", "Preview definition"},
+            a = {"<Cmd>Lspsaga code_action<cr>", "Code action"},
+            r = {"<Cmd>Lspsaga rename<cr>", "Rename"},
+        }
 },
 {
         mode="n",

@@ -41,4 +41,23 @@ packer.startup(function(use)
     use 'windwp/nvim-autopairs'
     use 'Yggdroot/indentLine'
     use 'glepnir/lspsaga.nvim'
+    -- use 'ray-x/guihua.lua'
+    -- use({
+    -- 'ray-x/navigator.lua',
+    -- requires = {
+    --     { 'ray-x/guihua.lua', run = 'cd lua/fzy && make' },
+    --     { 'neovim/nvim-lspconfig' },
+    --     },
+    -- })
+    use 'ThePrimeagen/refactoring.nvim'
+
+    -- Git integration
+    use {
+     'lewis6991/gitsigns.nvim',
+         config = function()
+            require('gitsigns').setup()
+            end
+        }
+    use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+
 end)
