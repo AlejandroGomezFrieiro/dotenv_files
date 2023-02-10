@@ -15,6 +15,10 @@ whichkey.register(
         ["w"] = { "<cmd>update!<CR>", "Save" },
         ["q"] = { "<cmd>q!<CR>", "Quit"},
 
+        m = {
+            name = "Markdown",
+            c = { "<Cmd>vim.util.lsp.stylize_markdown()<Cr>", "Stylize markdown block code"},
+        },
         b = {
             name = "Buffer",
             c = { "<Cmd>bd!<Cr>", "Close current buffer" },

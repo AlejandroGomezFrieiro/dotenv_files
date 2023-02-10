@@ -59,5 +59,18 @@ packer.startup(function(use)
             end
         }
     use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
-
+    use 'goerz/jupytext.vim'
+    use 'aserowy/tmux.nvim'
+    use 'kylechui/nvim-surround'
+    use 'anuvyklack/pretty-fold.nvim'
+    use "olimorris/persisted.nvim"
+    use {
+    "danymat/neogen",
+    config = function()
+        require('neogen').setup {}
+    end,
+    requires = "nvim-treesitter/nvim-treesitter",
+    -- Uncomment next line if you want to follow only stable versions
+    -- tag = "*"
+    }
 end)
