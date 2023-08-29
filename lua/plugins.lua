@@ -39,7 +39,7 @@ packer.startup(function(use)
     use 'L3MON4D3/LuaSnip'
     use 'williamboman/nvim-lsp-installer'
     use 'windwp/nvim-autopairs'
-    use 'Yggdroot/indentLine'
+    -- use 'Yggdroot/indentLine'
     use 'glepnir/lspsaga.nvim'
     -- use 'ray-x/guihua.lua'
     -- use({
@@ -59,7 +59,7 @@ packer.startup(function(use)
             end
         }
     use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
-    use 'goerz/jupytext.vim'
+    -- use 'goerz/jupytext.vim'
     use 'aserowy/tmux.nvim'
     use 'kylechui/nvim-surround'
     use 'anuvyklack/pretty-fold.nvim'
@@ -73,4 +73,13 @@ packer.startup(function(use)
     -- Uncomment next line if you want to follow only stable versions
     -- tag = "*"
     }
+    use "SmiteshP/nvim-navic"
+    use "MunifTanjim/nui.nvim"
+    -- use {
+    --     "SmiteshP/nvim-navbuddy",
+    -- }
+    use {"meatballs/notebook.nvim"}
+    use "quarto-dev/quarto-nvim"
+    use "jpalardy/vim-slime"
+    use "jmbuhr/otter.nvim"
 end)

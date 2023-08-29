@@ -1,7 +1,9 @@
 local status, ts_config = pcall(require, 'nvim-treesitter.configs')
-
+-- local status_objects, ts_objects = pcall(require, 'nvim-treesitter.textobjects')
 if not status then return end
+-- if not status_objects then return end
 
+-- ts_objects.setup()
 ts_config.setup {
 ensure_installed = {
     "c",
@@ -51,6 +53,7 @@ ensure_installed = {
   textobjects = {
     select = {
       enable = true,
+        lookahead = true,
       keymaps = {
         ["af"] = "@function.outer",
         ["if"] = "@function.inner",
@@ -58,6 +61,8 @@ ensure_installed = {
         ["ic"] = "@class.inner",
         ["ab"] = "@block.outer",
         ["ib"] = "@block.inner",
+        ["ao"] = "@codechunk.outer",
+        ["io"] = "@codechunk.inner",
       },
     },
     swap = {
@@ -69,6 +74,28 @@ ensure_installed = {
         ["<Leader>A"] = "@parameter.inner",
       },
     },
+    move = {
+            enable = true,
+            set_jumps = true, -- whether to set jumps in the jumplist
+            goto_next_start = {
+              [']m'] = '@function.outer',
+              [']c'] = '@codechunk.inner',
+              [']]'] = '@class.outer',
+            },
+            goto_next_end = {
+              [']M'] = '@function.outer',
+              [']['] = '@class.outer',
+            },
+            goto_previous_start = {
+              ['[m'] = '@function.outer',
+              ['[c'] = '@codechunk.inner',
+              ['[['] = '@class.outer',
+            },
+            goto_previous_end = {
+              ['[M'] = '@function.outer',
+              ['[]'] = '@class.outer',
+            },
+          },
     lsp_interop = {
       enable = true,
     },

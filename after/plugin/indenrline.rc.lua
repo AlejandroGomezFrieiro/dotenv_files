@@ -1,5 +1,6 @@
-local status, indentline = pcall(require, 'indentline')
+-- local status, indentline = pcall(require, 'indentline')
 
-if not status then return end
+-- if not status then return end
 
-indentline.setup()
+-- indentline.setup()
+-- vim.opt.conceallevel = 0

@@ -18,6 +18,7 @@ vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.wildmode = "longest,list"
+vim.opt.conceallevel=0
 
 vim.opt.cc = "120"
 

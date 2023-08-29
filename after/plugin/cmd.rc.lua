@@ -1,4 +1,4 @@
-local status, cmp =pcall(require, 'cmp')
+local status, cmp = pcall(require, 'cmp')
 
 if not status then return end
 
@@ -37,5 +37,6 @@ cmp.setup({
     { name = 'vsnip' },
     { name = 'path' },
     { name = 'buffer' },
+    { name = 'otter'}
   },
 })

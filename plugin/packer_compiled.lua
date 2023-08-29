@@ -115,16 +115,6 @@ _G.packer_plugins = {
     path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  indentLine = {
-    loaded = true,
-    path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/indentLine",
-    url = "https://github.com/Yggdroot/indentLine"
-  },
-  ["jupytext.vim"] = {
-    loaded = true,
-    path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/jupytext.vim",
-    url = "https://github.com/goerz/jupytext.vim"
-  },
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
@@ -140,6 +130,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/neogen",
     url = "https://github.com/danymat/neogen"
+  },
+  ["notebook.nvim"] = {
+    loaded = true,
+    path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/notebook.nvim",
+    url = "https://github.com/meatballs/notebook.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -160,6 +160,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-navic"] = {
+    loaded = true,
+    path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/nvim-navic",
+    url = "https://github.com/SmiteshP/nvim-navic"
   },
   ["nvim-surround"] = {
     loaded = true,
@@ -185,6 +190,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["otter.nvim"] = {
+    loaded = true,
+    path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/otter.nvim",
+    url = "https://github.com/jmbuhr/otter.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -216,6 +226,11 @@ _G.packer_plugins = {
     path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/promise-async",
     url = "https://github.com/kevinhwang91/promise-async"
   },
+  ["quarto-nvim"] = {
+    loaded = true,
+    path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/quarto-nvim",
+    url = "https://github.com/quarto-dev/quarto-nvim"
+  },
   ["refactoring.nvim"] = {
     loaded = true,
     path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/refactoring.nvim",
@@ -240,6 +255,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
+  },
+  ["vim-slime"] = {
+    loaded = true,
+    path = "/home/alejandro/.local/share/nvim/site/pack/packer/start/vim-slime",
+    url = "https://github.com/jpalardy/vim-slime"
   },
   ["which-key.nvim"] = {
     loaded = true,
